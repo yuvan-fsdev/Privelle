@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-matteBlack text-ivoryWhite font-body overflow-x-hidden;
+}
+
+::selection {
+  @apply bg-champagneGold text-matteBlack;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A227;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4b03a;
+}
+
+* {
+  scrollbar-color: #C9A227 #1a1a1a;
+  scrollbar-width: thin;
+}
+
+.luxury-radial-bg {
+  background: radial-gradient(circle at top, rgba(201, 162, 39, 0.16), transparent 35%),
+    radial-gradient(circle at right, rgba(90, 16, 34, 0.35), transparent 35%),
+    #111111;
+}
+
+.gold-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(201, 162, 39, 0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.burgundy-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.burgundy-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(90, 16, 34, 0.2), transparent 70%);
+  pointer-events: none;
+}
+
+.glass-panel {
+  @apply backdrop-blur-md bg-white/5 border border-white/10;
+}
+
+.gold-border {
+  @apply border border-champagneGold/30;
+}
+
+.luxury-gradient {
+  background: radial-gradient(circle at top, rgba(201, 162, 39, 0.16), transparent 35%),
+    radial-gradient(circle at right, rgba(90, 16, 34, 0.35), transparent 35%),
+    #111111;
+}
+
+* {
+  @apply transition-colors duration-300;
+}
+
+img {
+  @apply max-w-full h-auto;
+}
+
+a {
+  @apply no-underline;
+}
+
+a:focus-visible {
+  @apply outline-none ring-2 ring-champagneGold ring-offset-2 ring-offset-matteBlack rounded;
+}
+
+button:focus-visible {
+  @apply outline-none ring-2 ring-champagneGold ring-offset-2 ring-offset-matteBlack rounded;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    @apply !transition-none !animate-none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

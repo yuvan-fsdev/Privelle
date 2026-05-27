@@ -1,0 +1,25 @@
+export const PLACEHOLDER_IMAGE_PATHS = {
+  heroProductBox: '/images/placeholders/hero-product-box.jpg',
+  firstNightBox: '/images/placeholders/first-night-box.jpg',
+  anniversarySparkBox: '/images/placeholders/anniversary-spark-box.jpg',
+  weekendEscapeBox: '/images/placeholders/weekend-escape-box.jpg',
+  newlywedLuxuryKit: '/images/placeholders/newlywed-luxury-kit.jpg',
+  coupleRitualsBox: '/images/placeholders/couple-rituals-box.jpg',
+  afterDarkCardDeck: '/images/placeholders/after-dark-card-deck.jpg',
+  firstDateNightKit: '/images/placeholders/first-date-night-kit.jpg',
+  honeymoonKit: '/images/placeholders/honeymoon-kit.jpg',
+  bridalIntimacyKit: '/images/placeholders/bridal-intimacy-kit.jpg',
+  longDistanceReunionKit: '/images/placeholders/long-distance-reunion-kit.jpg',
+  babymoonKit: '/images/placeholders/babymoon-kit.jpg',
+  couplePerfumes: '/images/placeholders/couple-perfumes.jpg',
+  personalisedGifts: '/images/placeholders/personalised-gifts.jpg',
+  luxuryLetters: '/images/placeholders/luxury-letters.jpg',
+  instagram1: '/images/placeholders/instagram-1.jpg',
+  instagram2: '/images/placeholders/instagram-2.jpg',
+  instagram3: '/images/placeholders/instagram-3.jpg',
+  instagram4: '/images/placeholders/instagram-4.jpg',
+  instagram5: '/images/placeholders/instagram-5.jpg',
+  instagram6: '/images/placeholders/instagram-6.jpg',
+} as const;
+
+export type PlaceholderImageKey = keyof typeof PLACEHOLDER_IMAGE_PATHS;

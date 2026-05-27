@@ -1,0 +1,5 @@
+// July 1, 2026 00:00:00 IST
+export const LAUNCH_DATE_ISO = '2026-07-01T00:00:00+05:30';
+
+export const FOUNDING_BATCH_LIMIT = 50;
+export const FOUNDING_BATCH_RESERVED = 0;
