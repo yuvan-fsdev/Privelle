@@ -9,6 +9,8 @@ import ExperiencePhasesSection from '@/components/sections/ExperiencePhasesSecti
 import ProductCatalogueSection from '@/components/sections/ProductCatalogueSection';
 import AddOnProductsSection from '@/components/sections/AddOnProductsSection';
 import BoxBuilderPreviewSection from '@/components/sections/BoxBuilderPreviewSection';
+import WhatsInsideSection from '@/components/sections/WhatsInsideSection';
+import WhyChooseSection from '@/components/sections/WhyChooseSection';
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
         <ProductCatalogueSection />
         <AddOnProductsSection />
         <BoxBuilderPreviewSection />
+        <WhatsInsideSection />
+        <WhyChooseSection />
       </main>
       <StickyMobileCTA />
     </>

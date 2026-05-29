@@ -167,7 +167,7 @@ export default function HeroSection() {
           <FloatingElement>
             <div className="relative">
               <ImagePlaceholder
-                src="/images/placeholders/hero-product-box.jpg"
+                src="/images/placeholders/hero-product-box.png"
                 alt={heroImageAlt}
                 priority
                 width={720}
