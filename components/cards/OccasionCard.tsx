@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import {
   ArrowRight,
   Baby,
@@ -41,20 +42,9 @@ export default function OccasionCard({
   const shouldReduceMotion = useReducedMotion();
   const Icon = iconMap[occasion.icon] ?? Heart;
 
-  const handleClick = () => {
-    const targetId = occasion.href.replace('#', '');
-    const target = document.getElementById(targetId);
-
-    if (target) {
-      target.scrollIntoView({ behavior: shouldReduceMotion ? 'auto' : 'smooth' });
-    }
-  };
-
   return (
-    <motion.button
-      type="button"
+    <motion.div
       aria-label={`Explore Privelle options for ${occasion.title}`}
-      onClick={handleClick}
       initial={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: 24 }}
       whileInView={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
       whileHover={shouldReduceMotion ? undefined : { y: -6, scale: 1.015 }}
@@ -71,45 +61,51 @@ export default function OccasionCard({
         className
       )}
     >
-      <div className="absolute -right-12 -top-12 h-28 w-28 rounded-full bg-deepBurgundy/30 blur-3xl transition-opacity duration-300 group-hover:opacity-90" />
-      <div className="absolute inset-x-6 top-0 h-px bg-champagneGold/20" />
+      <Link
+        href={occasion.href}
+        aria-label={`Explore Privelle options for ${occasion.title}`}
+        className="block h-full focus-visible:outline-none"
+      >
+        <div className="absolute -right-12 -top-12 h-28 w-28 rounded-full bg-deepBurgundy/30 blur-3xl transition-opacity duration-300 group-hover:opacity-90" />
+        <div className="absolute inset-x-6 top-0 h-px bg-champagneGold/20" />
 
-      <div className="relative flex h-full flex-col">
-        <motion.div
-          animate={
-            shouldReduceMotion
-              ? undefined
-              : { rotate: [0, 2.5, 0], y: [0, -2, 0] }
-          }
-          transition={{ duration: 3.4, repeat: Infinity, ease: 'easeInOut' }}
-          className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-champagneGold/25 bg-champagneGold/10 text-champagneGold"
-        >
-          <Icon size={22} strokeWidth={1.7} aria-hidden="true" />
-        </motion.div>
+        <div className="relative flex h-full flex-col">
+          <motion.div
+            animate={
+              shouldReduceMotion
+                ? undefined
+                : { rotate: [0, 2.5, 0], y: [0, -2, 0] }
+            }
+            transition={{ duration: 3.4, repeat: Infinity, ease: 'easeInOut' }}
+            className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-champagneGold/25 bg-champagneGold/10 text-champagneGold"
+          >
+            <Icon size={22} strokeWidth={1.7} aria-hidden="true" />
+          </motion.div>
 
-        <span className="mb-4 inline-flex w-fit rounded-full border border-champagneGold/20 bg-deepBurgundy/20 px-3 py-1 text-xs font-medium text-softRose">
-          {occasion.recommendedFor}
-        </span>
+          <span className="mb-4 inline-flex w-fit rounded-full border border-champagneGold/20 bg-deepBurgundy/20 px-3 py-1 text-xs font-medium text-softRose">
+            {occasion.recommendedFor}
+          </span>
 
-        <h3 className="font-heading text-2xl font-semibold leading-tight text-ivoryWhite">
-          {occasion.title}
-        </h3>
-        <p className="mt-2 text-sm font-medium text-champagneGold">
-          {occasion.subtitle}
-        </p>
-        <p className="mt-4 flex-1 text-sm leading-6 text-ivoryWhite/65">
-          {occasion.description}
-        </p>
+          <h3 className="font-heading text-2xl font-semibold leading-tight text-ivoryWhite">
+            {occasion.title}
+          </h3>
+          <p className="mt-2 text-sm font-medium text-champagneGold">
+            {occasion.subtitle}
+          </p>
+          <p className="mt-4 flex-1 text-sm leading-6 text-ivoryWhite/65">
+            {occasion.description}
+          </p>
 
-        <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-roseBeige transition-colors duration-300 group-hover:text-champagneGold">
-          Explore this mood
-          <ArrowRight
-            size={16}
-            aria-hidden="true"
-            className="transition-transform duration-300 group-hover:translate-x-1"
-          />
-        </span>
-      </div>
-    </motion.button>
+          <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-roseBeige transition-colors duration-300 group-hover:text-champagneGold">
+            Explore this mood
+            <ArrowRight
+              size={16}
+              aria-hidden="true"
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </span>
+        </div>
+      </Link>
+    </motion.div>
   );
 }

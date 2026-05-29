@@ -17,7 +17,7 @@ export const OCCASIONS: Occasion[] = [
       'A thoughtful private experience designed to ease nervousness and create a warm beginning.',
     recommendedFor: 'Newlyweds',
     icon: 'Heart',
-    href: '#collection',
+    href: '/collection#collection',
   },
   {
     id: 'anniversary',
@@ -27,7 +27,7 @@ export const OCCASIONS: Occasion[] = [
       'A romantic curation for couples who want to celebrate love with warmth, surprise, and chemistry.',
     recommendedFor: 'Married couples',
     icon: 'CalendarHeart',
-    href: '#collection',
+    href: '/collection#collection',
   },
   {
     id: 'honeymoon',
@@ -37,7 +37,7 @@ export const OCCASIONS: Occasion[] = [
       'A compact luxury experience for couples starting a new journey together.',
     recommendedFor: 'Honeymoon couples',
     icon: 'Plane',
-    href: '#collection',
+    href: '/collection#collection',
   },
   {
     id: 'long-distance-reunion',
@@ -47,7 +47,7 @@ export const OCCASIONS: Occasion[] = [
       'A deeply emotional box for couples meeting after weeks or months apart.',
     recommendedFor: 'Long-distance couples',
     icon: 'MessageCircle',
-    href: '#collection',
+    href: '/collection#collection',
   },
   {
     id: 'babymoon',
@@ -57,7 +57,7 @@ export const OCCASIONS: Occasion[] = [
       'A gentle, comfort-first experience for expecting couples who want calm, care, and closeness.',
     recommendedFor: 'Expecting couples',
     icon: 'Baby',
-    href: '#collection',
+    href: '/collection#collection',
   },
   {
     id: 'first-date',
@@ -67,7 +67,7 @@ export const OCCASIONS: Occasion[] = [
       'A sweet kit for couples planning a special first private date night.',
     recommendedFor: 'New couples',
     icon: 'Sparkles',
-    href: '#collection',
+    href: '/collection#collection',
   },
   {
     id: 'bridal-intimacy',
@@ -77,7 +77,7 @@ export const OCCASIONS: Occasion[] = [
       'A gentle, premium curation designed around comfort, privacy, and emotional reassurance.',
     recommendedFor: 'Bride-to-be',
     icon: 'Gem',
-    href: '#collection',
+    href: '/collection#collection',
   },
   {
     id: 'weekend-escape',
@@ -87,6 +87,6 @@ export const OCCASIONS: Occasion[] = [
       'A staycation-friendly box for hotel nights, surprise plans, and spontaneous romantic getaways.',
     recommendedFor: 'Private celebrations',
     icon: 'Moon',
-    href: '#collection',
+    href: '/collection#collection',
   },
 ];

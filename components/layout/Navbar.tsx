@@ -86,6 +86,7 @@ export default function Navbar() {
                 href={getWhatsAppUrl(whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${ctaLabel} on WhatsApp`}
               >
                 {ctaLabel}
               </a>

@@ -102,6 +102,7 @@ export default function MobileMenu({
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={onClose}
+                  aria-label={`${ctaLabel} on WhatsApp`}
                 >
                   {ctaLabel}
                 </a>

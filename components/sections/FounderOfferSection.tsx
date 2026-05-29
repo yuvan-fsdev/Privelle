@@ -6,6 +6,10 @@ import Reveal from '@/components/motion/Reveal';
 import Badge from '@/components/ui/Badge';
 import Button from '@/components/ui/Button';
 import CountdownTimer from '@/components/ui/CountdownTimer';
+import {
+  FOUNDING_BATCH_LIMIT,
+  FOUNDING_BATCH_RESERVED,
+} from '@/constants/launch';
 import { isFounderOfferActive } from '@/lib/launch';
 import { getWhatsAppUrl, PRE_LAUNCH_WHATSAPP_MESSAGE } from '@/lib/whatsapp';
 
@@ -44,6 +48,11 @@ export default function FounderOfferSection() {
     return null;
   }
 
+  const reserved = FOUNDING_BATCH_RESERVED;
+  const limit = FOUNDING_BATCH_LIMIT;
+  const remaining = Math.max(limit - reserved, 0);
+  const percentage = limit > 0 ? Math.min((reserved / limit) * 100, 100) : 0;
+
   return (
     <section
       id="founder-offer"
@@ -80,31 +89,89 @@ export default function FounderOfferSection() {
             </div>
           </Reveal>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={benefit.title}
-                initial={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: 16 }}
-                whileInView={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
-                transition={{
-                  delay: index * 0.06,
-                  duration: 0.5,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-                viewport={{ once: true, amount: 0.25 }}
-                className="rounded-2xl border border-champagneGold/15 bg-white/[0.035] p-5"
+          <div className="mt-10 grid gap-5 lg:grid-cols-[0.95fr_1.05fr]">
+            <motion.div
+              initial={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: 18 }}
+              whileInView={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              viewport={{ once: true, amount: 0.2 }}
+              className="glass-panel rounded-[2rem] border border-champagneGold/20 p-5 sm:p-6"
+            >
+              <Badge variant="gold" className="mb-4">
+                Founder Batch 01
+              </Badge>
+              <p className="font-heading text-3xl leading-tight text-ivoryWhite sm:text-4xl">
+                {reserved} / {limit} Founder Boxes Reserved
+              </p>
+              <motion.p
+                animate={
+                  shouldReduceMotion
+                    ? undefined
+                    : { opacity: [0.8, 1, 0.8] }
+                }
+                transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+                className="mt-3 text-sm leading-7 text-champagneGold sm:text-base"
               >
-                <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-full border border-champagneGold/35 text-sm font-semibold text-champagneGold">
-                  {index + 1}
-                </div>
-                <h3 className="font-heading text-lg font-semibold text-ivoryWhite">
-                  {benefit.title}
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-warmTaupe">
-                  {benefit.description}
-                </p>
-              </motion.div>
-            ))}
+                Only {remaining} founder boxes remaining in Batch 01
+              </motion.p>
+
+              <div className="mt-5 h-4 overflow-hidden rounded-full border border-ivoryWhite/10 bg-softBlack">
+                <motion.div
+                  initial={shouldReduceMotion ? { opacity: 1 } : { width: 0 }}
+                  whileInView={shouldReduceMotion ? { opacity: 1 } : { width: `${percentage}%` }}
+                  viewport={{ once: true, amount: 0.6 }}
+                  transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+                  className="h-full rounded-full bg-gradient-to-r from-champagneGold via-[#d9bb5d] to-champagneGold"
+                />
+              </div>
+
+              <p className="mt-4 text-sm leading-6 text-ivoryWhite/55">
+                Count is manually updated as founder reservations are confirmed.
+              </p>
+              <p className="mt-2 text-sm leading-6 text-roseBeige/80">
+                20% Founder&apos;s Offer • First Dispatch July 1, 2026
+              </p>
+
+              <div className="mt-6">
+                <Button asChild size="lg" variant="primary" className="w-full sm:w-auto">
+                  <a
+                    href={getWhatsAppUrl(PRE_LAUNCH_WHATSAPP_MESSAGE)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Reserve Founder Box on WhatsApp"
+                  >
+                    Reserve Founder Box
+                  </a>
+                </Button>
+              </div>
+            </motion.div>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              {benefits.map((benefit, index) => (
+                <motion.div
+                  key={benefit.title}
+                  initial={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: 16 }}
+                  whileInView={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
+                  transition={{
+                    delay: index * 0.06,
+                    duration: 0.5,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                  viewport={{ once: true, amount: 0.25 }}
+                  className="rounded-2xl border border-champagneGold/15 bg-white/[0.035] p-5"
+                >
+                  <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-full border border-champagneGold/35 text-sm font-semibold text-champagneGold">
+                    {index + 1}
+                  </div>
+                  <h3 className="font-heading text-lg font-semibold text-ivoryWhite">
+                    {benefit.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-warmTaupe">
+                    {benefit.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
           <Reveal delay={0.18}>

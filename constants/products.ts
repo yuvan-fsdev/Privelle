@@ -1,4 +1,4 @@
-export type ProductPhaseItems = {
+﻿export type ProductPhaseItems = {
   preCare: string[];
   intimateCare: string[];
   postCare: string[];
@@ -25,7 +25,7 @@ export const products: Product[] = [
     description:
       'A premium private box crafted for newlyweds to ease nervousness, create comfort, and make the first night feel warm, thoughtful, and memorable.',
     startingPrice: '₹1,999',
-    image: '/images/placeholders/first-night-box.png',
+    image: '/images/placeholders/first-night-box.jpg',
     alt: 'Elegant first night luxury gift box with ivory satin, champagne gold ribbon, candles, chocolates, couple cards, personalised note, and discreet wellness essentials',
     badge: 'Newlywed Favourite',
     recommendedFor: ['Newlyweds', 'First Night', 'Bride-to-be'],
@@ -42,7 +42,7 @@ export const products: Product[] = [
     description:
       'A romantic anniversary experience designed to bring back butterflies, warmth, and playful chemistry with a luxurious private touch.',
     startingPrice: '₹2,499',
-    image: '/images/placeholders/anniversary-spark-box.png',
+    image: '/images/placeholders/anniversary-spark-box.jpg',
     alt: 'Luxury anniversary couple gifting box with burgundy roses, gold accents, chocolates, perfume samples, candles, romantic cards, and personalised love note',
     badge: 'Romantic Pick',
     recommendedFor: ['Anniversary', 'Married Couples', 'Private Celebration'],
@@ -59,7 +59,7 @@ export const products: Product[] = [
     description:
       'A compact luxury kit for staycations, hotel nights, and spontaneous romantic getaways.',
     startingPrice: '₹2,999',
-    image: '/images/placeholders/weekend-escape-box.png',
+    image: '/images/placeholders/weekend-escape-box.jpg',
     alt: 'Premium weekend escape couple kit with travel-size perfumes, scented candle, couple games, chocolates, personalised card, and discreet wellness products',
     badge: 'Staycation Ready',
     recommendedFor: ['Hotel Stay', 'Weekend Plan', 'Couples'],
@@ -76,7 +76,7 @@ export const products: Product[] = [
     description:
       'A complete curated experience for newly married couples who want elegance, privacy, emotional comfort, and premium presentation.',
     startingPrice: '₹3,499',
-    image: '/images/placeholders/newlywed-luxury-kit.png',
+    image: '/images/placeholders/newlywed-luxury-kit.jpg',
     alt: 'Newlywed luxury intimacy kit in matte black box with satin wrap, romantic accessories, music card, candles, chocolates, perfumes, and wellness essentials',
     badge: 'Premium Kit',
     recommendedFor: ['Newlyweds', 'Wedding Gift', 'Luxury Gifting'],
@@ -93,7 +93,7 @@ export const products: Product[] = [
     description:
       'A slow-romance box for couples who love intentional moments, conversations, rituals, and soft intimacy.',
     startingPrice: '₹2,799',
-    image: '/images/placeholders/weekend-escape-box.png',
+    image: '/images/placeholders/couple-rituals-box.jpg',
     alt: 'Couple rituals luxury box with candle, journal card, romantic questions, herbal tea, chocolates, personalised notes, and elegant matte black packaging',
     badge: 'Slow Romance',
     recommendedFor: ['Soft Romance', 'Date Night', 'Connection'],
@@ -110,7 +110,7 @@ export const products: Product[] = [
     description:
       'A playful premium couple card deck made for chemistry, laughter, teasing, and deeper connection.',
     startingPrice: '₹999',
-    image: '/images/placeholders/anniversary-spark-box.png',
+    image: '/images/placeholders/after-dark-card-deck.jpg',
     alt: 'Premium after dark couple card deck in matte black and champagne gold packaging with romantic question cards and elegant typography',
     badge: 'Playful Add-on',
     recommendedFor: ['Card Games', 'Playful Couples', 'Add-on'],
@@ -127,7 +127,7 @@ export const products: Product[] = [
     description:
       'A soft and charming kit for couples planning their first special date night together.',
     startingPrice: '₹1,499',
-    image: '/images/placeholders/first-night-box.png',
+    image: '/images/placeholders/first-date-night-kit.jpg',
     alt: 'First date night kit with chocolates, conversation cards, mini perfume, music QR card, candle, and elegant private packaging',
     badge: 'Soft Start',
     recommendedFor: ['First Date', 'New Couples', 'Soft Romance'],
@@ -144,7 +144,7 @@ export const products: Product[] = [
     description:
       'A travel-friendly luxury kit for honeymoon couples, curated for romance, relaxation, and private comfort.',
     startingPrice: '₹3,999',
-    image: '/images/placeholders/newlywed-luxury-kit.png',
+    image: '/images/placeholders/honeymoon-kit.jpg',
     alt: 'Honeymoon luxury couple kit with travel perfumes, satin eye mask, bath salts, chocolates, couple game cards, personalised note, and discreet wellness items',
     badge: 'Travel Luxury',
     recommendedFor: ['Honeymoon', 'Travel', 'Newlyweds'],
@@ -161,7 +161,7 @@ export const products: Product[] = [
     description:
       'A gentle, premium kit designed for brides and newlyweds with comfort, privacy, emotional reassurance, and thoughtful care.',
     startingPrice: '₹3,499',
-    image: '/images/placeholders/first-night-box.png',
+    image: '/images/placeholders/bridal-intimacy-kit.jpg',
     alt: 'Bridal intimacy kit with ivory and champagne gold packaging, soft candle, personalised note, chocolates, comfort essentials, and discreet wellness products',
     badge: 'Bride Comfort',
     recommendedFor: ['Bride-to-be', 'Newlyweds', 'Comfort Care'],
@@ -178,7 +178,7 @@ export const products: Product[] = [
     description:
       'A deeply emotional kit for couples meeting after weeks or months apart, designed around anticipation, memory, and closeness.',
     startingPrice: '₹2,999',
-    image: '/images/placeholders/weekend-escape-box.png',
+    image: '/images/placeholders/long-distance-reunion-kit.jpg',
     alt: 'Long distance reunion couple box with open-when letters, perfume pair, countdown cards, chocolates, romantic memory cards, and premium discreet packaging',
     badge: 'Emotional Pick',
     recommendedFor: ['Long Distance', 'Reunion', 'Emotional Gifting'],
@@ -195,7 +195,7 @@ export const products: Product[] = [
     description:
       'A gentle luxury bonding kit for expecting couples, focused on comfort, relaxation, emotional closeness, and safe-feeling romance.',
     startingPrice: '₹3,999',
-    image: '/images/placeholders/newlywed-luxury-kit.png',
+    image: '/images/placeholders/babymoon-kit.jpg',
     alt: 'Babymoon couple wellness kit with caffeine-free tea, soft snacks, belly care items, memory journal, candles, personalised note, and comfort gifts',
     badge: 'Gentle Luxury',
     recommendedFor: ['Expecting Couples', 'Babymoon', 'Gentle Romance'],

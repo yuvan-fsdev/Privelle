@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { useEffect, useState } from 'react';
@@ -52,18 +53,6 @@ export default function HeroSection() {
   const whatsappMessage = founderActive
     ? PRE_LAUNCH_WHATSAPP_MESSAGE
     : POST_LAUNCH_WHATSAPP_MESSAGE;
-
-  const handleCollectionClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const collection = document.querySelector('#collection');
-
-    if (!collection) {
-      event.preventDefault();
-      return;
-    }
-
-    event.preventDefault();
-    collection.scrollIntoView({ behavior: shouldReduceMotion ? 'auto' : 'smooth' });
-  };
 
   return (
     <section
@@ -141,14 +130,14 @@ export default function HeroSection() {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="group w-full sm:w-auto">
-                <a href="#collection" onClick={handleCollectionClick}>
+                <Link href="/collection" aria-label="View the Privelle collection">
                   View Collection
                   <ArrowRight
                     size={18}
                     aria-hidden="true"
                     className="transition-transform duration-300 group-hover:translate-x-1"
                   />
-                </a>
+                </Link>
               </Button>
             </div>
           </Reveal>
@@ -167,7 +156,7 @@ export default function HeroSection() {
           <FloatingElement>
             <div className="relative">
               <ImagePlaceholder
-                src="/images/placeholders/hero-product-box.png"
+                src="/images/placeholders/hero-product-box.jpg"
                 alt={heroImageAlt}
                 priority
                 width={720}

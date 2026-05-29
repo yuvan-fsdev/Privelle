@@ -1,35 +1,26 @@
-import Navbar from '@/components/layout/Navbar';
-import StickyMobileCTA from '@/components/layout/StickyMobileCTA';
+import type { Metadata } from 'next';
+import AboutSection from '@/components/sections/AboutSection';
+import ChooseOccasionSection from '@/components/sections/ChooseOccasionSection';
+import FeaturedProductsPreviewSection from '@/components/sections/FeaturedProductsPreviewSection';
+import FinalCTASection from '@/components/sections/FinalCTASection';
 import FounderOfferSection from '@/components/sections/FounderOfferSection';
 import HeroSection from '@/components/sections/HeroSection';
-import ChooseOccasionSection from '@/components/sections/ChooseOccasionSection';
 import HowItWorksSection from '@/components/sections/HowItWorksSection';
-import AboutSection from '@/components/sections/AboutSection';
-import ExperiencePhasesSection from '@/components/sections/ExperiencePhasesSection';
-import ProductCatalogueSection from '@/components/sections/ProductCatalogueSection';
-import AddOnProductsSection from '@/components/sections/AddOnProductsSection';
-import BoxBuilderPreviewSection from '@/components/sections/BoxBuilderPreviewSection';
-import WhatsInsideSection from '@/components/sections/WhatsInsideSection';
-import WhyChooseSection from '@/components/sections/WhyChooseSection';
+
+export const metadata: Metadata = {
+  title: 'Privelle | Private Luxury for Modern Couples',
+};
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main>
-        <HeroSection />
-        <FounderOfferSection />
-        <ChooseOccasionSection />
-        <HowItWorksSection />
-        <AboutSection />
-        <ExperiencePhasesSection />
-        <ProductCatalogueSection />
-        <AddOnProductsSection />
-        <BoxBuilderPreviewSection />
-        <WhatsInsideSection />
-        <WhyChooseSection />
-      </main>
-      <StickyMobileCTA />
+      <HeroSection />
+      <FounderOfferSection />
+      <ChooseOccasionSection />
+      <HowItWorksSection />
+      <AboutSection />
+      <FeaturedProductsPreviewSection />
+      <FinalCTASection />
     </>
   );
 }

@@ -4,8 +4,9 @@ export interface NavLink {
 }
 
 export const NAV_LINKS: NavLink[] = [
-  { label: 'Collection', href: '#collection' },
-  { label: "What's Inside", href: '#whats-inside' },
-  { label: 'Why Privelle', href: '#why-privelle' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'Home', href: '/' },
+  { label: 'Collection', href: '/collection' },
+  { label: 'Build Box', href: '/build-box' },
+  { label: "What's Inside", href: '/inside-privelle' },
+  { label: 'FAQ', href: '/faq' },
 ];
