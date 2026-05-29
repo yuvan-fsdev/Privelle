@@ -93,7 +93,7 @@ export const products: Product[] = [
     description:
       'A slow-romance box for couples who love intentional moments, conversations, rituals, and soft intimacy.',
     startingPrice: '₹2,799',
-    image: '/images/placeholders/couple-rituals-box.png',
+    image: '/images/placeholders/weekend-escape-box.png',
     alt: 'Couple rituals luxury box with candle, journal card, romantic questions, herbal tea, chocolates, personalised notes, and elegant matte black packaging',
     badge: 'Slow Romance',
     recommendedFor: ['Soft Romance', 'Date Night', 'Connection'],
@@ -110,7 +110,7 @@ export const products: Product[] = [
     description:
       'A playful premium couple card deck made for chemistry, laughter, teasing, and deeper connection.',
     startingPrice: '₹999',
-    image: '/images/placeholders/after-dark-card-deck.png',
+    image: '/images/placeholders/anniversary-spark-box.png',
     alt: 'Premium after dark couple card deck in matte black and champagne gold packaging with romantic question cards and elegant typography',
     badge: 'Playful Add-on',
     recommendedFor: ['Card Games', 'Playful Couples', 'Add-on'],
@@ -127,7 +127,7 @@ export const products: Product[] = [
     description:
       'A soft and charming kit for couples planning their first special date night together.',
     startingPrice: '₹1,499',
-    image: '/images/placeholders/first-date-night-kit.png',
+    image: '/images/placeholders/first-night-box.png',
     alt: 'First date night kit with chocolates, conversation cards, mini perfume, music QR card, candle, and elegant private packaging',
     badge: 'Soft Start',
     recommendedFor: ['First Date', 'New Couples', 'Soft Romance'],
@@ -144,7 +144,7 @@ export const products: Product[] = [
     description:
       'A travel-friendly luxury kit for honeymoon couples, curated for romance, relaxation, and private comfort.',
     startingPrice: '₹3,999',
-    image: '/images/placeholders/honeymoon-kit.png',
+    image: '/images/placeholders/newlywed-luxury-kit.png',
     alt: 'Honeymoon luxury couple kit with travel perfumes, satin eye mask, bath salts, chocolates, couple game cards, personalised note, and discreet wellness items',
     badge: 'Travel Luxury',
     recommendedFor: ['Honeymoon', 'Travel', 'Newlyweds'],
@@ -161,7 +161,7 @@ export const products: Product[] = [
     description:
       'A gentle, premium kit designed for brides and newlyweds with comfort, privacy, emotional reassurance, and thoughtful care.',
     startingPrice: '₹3,499',
-    image: '/images/placeholders/bridal-intimacy-kit.png',
+    image: '/images/placeholders/first-night-box.png',
     alt: 'Bridal intimacy kit with ivory and champagne gold packaging, soft candle, personalised note, chocolates, comfort essentials, and discreet wellness products',
     badge: 'Bride Comfort',
     recommendedFor: ['Bride-to-be', 'Newlyweds', 'Comfort Care'],
@@ -178,7 +178,7 @@ export const products: Product[] = [
     description:
       'A deeply emotional kit for couples meeting after weeks or months apart, designed around anticipation, memory, and closeness.',
     startingPrice: '₹2,999',
-    image: '/images/placeholders/long-distance-reunion-kit.png',
+    image: '/images/placeholders/weekend-escape-box.png',
     alt: 'Long distance reunion couple box with open-when letters, perfume pair, countdown cards, chocolates, romantic memory cards, and premium discreet packaging',
     badge: 'Emotional Pick',
     recommendedFor: ['Long Distance', 'Reunion', 'Emotional Gifting'],
@@ -195,7 +195,7 @@ export const products: Product[] = [
     description:
       'A gentle luxury bonding kit for expecting couples, focused on comfort, relaxation, emotional closeness, and safe-feeling romance.',
     startingPrice: '₹3,999',
-    image: '/images/placeholders/babymoon-kit.png',
+    image: '/images/placeholders/newlywed-luxury-kit.png',
     alt: 'Babymoon couple wellness kit with caffeine-free tea, soft snacks, belly care items, memory journal, candles, personalised note, and comfort gifts',
     badge: 'Gentle Luxury',
     recommendedFor: ['Expecting Couples', 'Babymoon', 'Gentle Romance'],

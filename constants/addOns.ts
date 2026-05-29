@@ -22,7 +22,7 @@ export const addOns: AddOn[] = [
     tagline: 'His scent. Her scent. One memory.',
     description:
       'A premium fragrance pairing designed to turn your private moment into a lasting memory. Perfect for anniversaries, honeymoons, reunions, and luxury gifting.',
-    image: '/images/placeholders/couple-perfumes.jpg',
+    image: '/images/placeholders/hero-product-box.png',
     alt: 'Luxury couple perfume duo bottles in matte black and champagne gold packaging with warm romantic lighting and soft burgundy background',
     inclusions: [
       'His & Her fragrance pairing',
@@ -41,7 +41,7 @@ export const addOns: AddOn[] = [
     tagline: 'Small details. Big emotions.',
     description:
       'Custom keepsakes crafted around your story - perfect for making the box feel personal, thoughtful, and impossible to forget.',
-    image: '/images/placeholders/personalised-gifts.jpg',
+    image: '/images/placeholders/newlywed-luxury-kit.png',
     alt: 'Personalised couple gifts including engraved cards, photo keepsakes, name tags, custom message cards, and luxury wrapped accessories',
     inclusions: [
       'Name or initials personalisation',
@@ -60,7 +60,7 @@ export const addOns: AddOn[] = [
     tagline: "Words they'll keep long after the night ends.",
     description:
       'Emotionally written and beautifully presented letters, crafted to sound like your relationship - romantic, playful, emotional, or deeply personal.',
-    image: '/images/placeholders/luxury-letters.jpg',
+    image: '/images/placeholders/anniversary-spark-box.png',
     alt: 'Luxury customised love letters with wax seal, textured ivory paper, champagne gold details, perfume-sprayed envelope, and soft candlelight',
     inclusions: [
       'Romantic letter writing',
